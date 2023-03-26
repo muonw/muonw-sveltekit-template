@@ -33,11 +33,10 @@ Base: Skeleton project + Typescript + ESLint + Prettier
 - static
     - @muonw/mascara static files added
     - .nojekyll added
-    - favicon.png cleaned
+    - favicon.webp and favicon-dark.webp added
 
 - .gitignore
     - /package-lock.json added
-    - /_ added
 
 - .npmrc
     - @muonw registry added
