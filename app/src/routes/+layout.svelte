@@ -20,8 +20,11 @@ import '$lib/styles/global.scss';
 </script>
 
 <nav>
-    <span id='switch-to-light-mode' title="Light Mode" on:click={()=>switchColorScheme('light')} on:keypress={()=>switchColorScheme('light')}>☀️</span>
-    <span id='switch-to-dark-mode' title="Dark Mode" on:click={()=>switchColorScheme('dark')} on:keypress={()=>switchColorScheme('dark')}>🌙</span>
+    <div></div>
+    <div>
+        <span id='switch-to-light-mode' title="Light Mode" on:click={()=>switchColorScheme('light')} on:keypress={()=>switchColorScheme('light')}>☀️</span>
+        <span id='switch-to-dark-mode' title="Dark Mode" on:click={()=>switchColorScheme('dark')} on:keypress={()=>switchColorScheme('dark')}>🌙</span>
+    </div>
 </nav>
 
 <hr>
@@ -29,6 +32,10 @@ import '$lib/styles/global.scss';
 <slot />
 
 <style>
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 #switch-to-light-mode {
     display: var(--dark-mode-display);
     cursor: pointer;

@@ -24,7 +24,9 @@ Base: Skeleton project + Typescript + ESLint + Prettier
 
 ### Summary of the modifications:
 
-- src/lib/index.js added
+- src/lib/index.ts added
+
+- src/lib/styles/global.scss added
 
 - src/routes/+layout.ts
     - prerender: true
