@@ -26,3 +26,15 @@ $dark_root: (
         #{$key}: $val;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+.contained {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    max-width: 1024px;
+    margin: auto;
+    box-sizing: border-box;
+}

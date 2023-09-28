@@ -1,8 +1,10 @@
 <script lang="ts">
+import { pageTitle } from "$lib/stores/mainStore";
+
+pageTitle.set('');
+
 </script>
 
-<svelte:head>
-    <title></title>
-</svelte:head>
-
-Test
+<div class="contained">
+    Test
+</div>
